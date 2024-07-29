@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+
+    width:100vw;
+    height:100px;
+   /* border:1px solid black;*/
+
+}
+
+.left{
+    width:100px;
+height:inherit;
+/*    border:1px solid black;*/
+    float: left;
+
+}
+
+.leftimg{
+
+    width:100px;
+    height:100px;
+  /*  border:1px soild black;*/
+}
+
+.center{
+    width:80%;
+    height:100px;
+    /*border:1px solid black;*/
+float:left;
+    text-align: center;
+}
+
+.right{
+    width:100px;
+    height:100px;
+   /* border:1px solid black;*/
+float:right;
+}
+.rightimg{
+    width:100px;
+    height:100px;
+
+}
+
+button{
+border:none;
+    background color:none;
+    font-size:10px;
+    padding:4px 8px;
+    margin:5px;
+font-weight:bold;
+}
+.active{
+
+    background: #11118c;
+color:white;
+    font-weight: bold;
+
+}
+.normal{
+    background-color: white;
+
+
+}
+.orange{
+color:orange;
+background-color:white;
+    font-weight: bold;
+
+}
+.md-navbar{
+    width:100vw;
+    height:500px;
+    border:1px solid black;
+   padding: 50px;
+    background:url("https://wallpaperset.com/w/full/d/2/3/509749.jpg") 100%;
+
+
+
+}
+
+
+
+.menu-box{
+    width: 600px;
+    height: 400px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    float: right;
+    text-align: center;
+}
+
+
+
+.btn-box{
+    width: 45%;
+    height: 25px;
+    background-color: darkblue;
+color: white;
+    font-size: 14px;
+
+}
+.nav{
+
+width:inherit;
+    height:60px;
+    border:1px solid black;
+
+
+}

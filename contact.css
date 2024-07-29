@@ -1,0 +1,212 @@
+.upper-box{
+  /* border:1px solid black;*/
+   height:100px;
+   width:100%;
+  
+   background-color:rgba(255, 255, 255,0.5);
+}
+.box-left-side img{
+   height:100px;
+   width:7%;
+   /*border:1px solid black;*/
+   margin-left:30px;
+   border-radius: 50%;
+  
+  
+}
+#aps{
+   height:100px;
+   width:100px;
+} 
+.center{
+   text-align: center;
+   margin-top: -4%;
+   margin-left:700px;
+   
+}
+.aditya{
+  margin-left:150px;
+  margin-top:-40px;
+  color:rgb(215, 252, 225);
+  font-size: 300%;
+  font-family:sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+.normal {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #fff;
+    width: 8em;
+    height: 2.5em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #f15bb5, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+    margin-left: 1rem;
+  }
+  
+  .normal:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+  }
+  
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  .normal:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+    
+  }
+  
+  .normal:hover::before {
+    filter: blur(20px);
+  }
+  
+  .normal:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  }
+.center{
+    text-align: center;
+    margin-top: -5%;
+    margin-left:700px;
+    
+}
+.contact-box{
+    /*border: 1px solid black;*/
+    height: 40%;
+    width: 100%;
+    margin-top: -1%;
+    background-color: #669999;
+}
+.quick-links{
+   /*border: 1px solid black;*/
+    height: 100%;
+    width: 30%;
+    margin-left: 32%;
+    margin-top: -16%; 
+}
+.contact-info{
+    /*border: 1px solid black;*/
+    height: 100%;
+    width: 30%;
+    margin-left: 64%;
+    margin-top: -22%;
+}
+.con-image img{
+    height:60%;
+    width: 30%;
+    /*border: 1px solid black;*/
+    margin-left: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    box-shadow: 20px 20px 20px;
+}
+.message-box{
+    /* border: 1px solid black; */
+    height: 60%;
+    width: 30%;
+    margin-left: 55%;
+    margin-top:-28.6%;
+    /* box-shadow: 20px 20px 20px; */
+}
+
+
+      
+
+
+        .card {
+          height: 20rem;
+          background: lightgrey;
+          background-color: #4158D0;
+          background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+          border-top-left-radius: 2rem;
+          border-bottom-right-radius: 2rem;
+          padding: 1rem;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          transition: 0.5s ease-in-out;
+        }       
+        .heading {
+          text-align: center;
+          font-weight: 600;
+          padding-top: 1rem;
+          font-size: large;
+        }
+        
+        .input-div {
+          display: flex;
+          margin-top: 1rem;
+          margin-left: 8rem;
+          transition: 0.5s ease-in-out;
+        }
+        .card input {
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid black;
+          width: 12rem;
+          padding: 8px;
+          outline: none;
+        }       
+        .button-div {
+          text-align: center;
+        }
+        .submit {
+          margin-top: 3rem;
+          margin-left: 1rem;
+          text-align: center;
+          padding: 8px 3rem;
+          border: none;
+          border-top-left-radius: 1rem;
+          border-bottom-right-radius: 1rem;
+          background-color: black;
+          color: white;
+          transition: 0.5s ease-in-out;
+          cursor: pointer
+        }
+        .submit:hover {
+          box-shadow: rgba(44, 43, 43, 0.664) 5px 5px, rgba(45, 45, 45, 0.3) 10px 10px, rgba(60, 59, 59, 0.2) 15px 15px, rgba(54, 53, 53, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+        }
+        .card input::placeholder {
+          color: black;
+        }       
+        .input:focus {
+          transition: 0.2s ease-in-out;
+          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }       
+        .input:hover {
+          transition: 0.2s ease-in-out;
+          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+        
+        

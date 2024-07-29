@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Your content here -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Calculator</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="result" readonly>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('1')">1</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('2')">2</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('3')">3</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendOperator('+')">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('4')">4</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('5')">5</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('6')">6</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendOperator('-')">-</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('7')">7</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('8')">8</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('9')">9</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendOperator('*')">*</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('0')">0</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendOperator('.')">.</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="clearResult()">C</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-secondary btn-block" onclick="appendOperator('/')">/</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn-block" onclick="calculateResult()">=</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header text-center" id="head">
+                        <h2>Certificate of Completion</h2>
+                    </div>
+                    <div class="card-body text-center">
+                        <p>This is to certify that</p>
+                        <h3>PALLABI SAHU</h3>
+                        <p>has successfully completed the course</p>
+                        <h4>C programming</h4>
+                        <p>on</p>
+                        <h5>25-06-2024</h5>
+                    </div>
+                    <div class="card-footer text-center" id="body">
+                        <p>Instructor: ADITYA PRASAD SWAIN</p>
+                        <p>Institution: HACKER VLOG</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Banking Management System</h2>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="accountNumber">Account Number:</label>
+                                <input type="text" class="form-control" id="accountNumber" placeholder="Enter account number">
+                            </div>
+                            <div class="form-group">
+                                <label for="accountHolder">Account Holder Name:</label>
+                                <input type="text" class="form-control" id="accountHolder" placeholder="Enter account holder name">
+                            </div>
+                            <div class="form-group">
+                                <label for="branch">Branch:</label>
+                                <input type="text" class="form-control" id="branch" placeholder="Enter branch">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City:</label>
+                                <input type="text" class="form-control" id="city" placeholder="Enter city">
+                            </div>
+                            <div class="form-group">
+                                <label for="deposit">Deposit Amount:</label>
+                                <input type="number" class="form-control" id="deposit" placeholder="Enter deposit amount">
+                            </div>
+                            <div class="form-group">
+                                <label for="withdraw">Withdraw Amount:</label>
+                                <input type="number" class="form-control" id="withdraw" placeholder="Enter withdraw amount">
+                            </div>
+                            <div class="form-group">
+                                <label for="balance">Total Balance:</label>
+                                <input type="text" class="form-control" id="balance" readonly>
+                            </div>
+                            <button type="button" class="btn btn-success btn-block" onclick="depositAmount()">Deposit</button>
+                            <button type="button" class="btn btn-danger btn-block" onclick="withdrawAmount()">Withdraw</button>
+                        </form>
+                        <div class="mt-4">
+                            <h4>Account Details</h4>
+                            <p><strong>Account Number:</strong> <span id="displayAccountNumber"></span></p>
+                            <p><strong>Account Holder Name:</strong> <span id="displayAccountHolder"></span></p>
+                            <p><strong>Branch:</strong> <span id="displayBranch"></span></p>
+                            <p><strong>City:</strong> <span id="displayCity"></span></p>
+                            <p><strong>Total Balance:</strong> <span id="displayBalance"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Track Mobile Number</h2>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="mobileNumber">Mobile Number:</label>
+                                <input type="text" class="form-control" id="mobileNumber" placeholder="Enter mobile number">
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block" onclick="trackMobileNumber()">Track</button>
+                        </form>
+                        <div class="mt-4">
+                            <h4>Mobile Number Details</h4>
+                            <p><strong>Location:</strong> <span id="location"></span></p>
+                            <p><strong>Carrier:</strong> <span id="carrier"></span></p>
+                            <p><strong>Line Type:</strong> <span id="lineType"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        async function trackMobileNumber() {
+            const mobileNumber = document.getElementById('mobileNumber').value;
+            if (mobileNumber) {
+                try {
+                    const response = await fetch(`https://api.alternative.com/track?number=${mobileNumber}`);
+                    const data = await response.json();
+                    document.getElementById('location').innerText = data.location || 'N/A';
+                    document.getElementById('carrier').innerText = data.carrier || 'N/A';
+                    document.getElementById('lineType').innerText = data.lineType || 'N/A';
+                    document.getElementById('allDetails').innerText = JSON.stringify(data, null, 2);
+                } catch (error) {
+                    console.error('Error tracking mobile number:', error);
+                }
+            }
+        }
+    </script>
+    
+    <script>
+        let totalBalance = 0;
+
+        function depositAmount() {
+            const deposit = parseFloat(document.getElementById('deposit').value);
+            if (!isNaN(deposit) && deposit > 0) {
+                totalBalance += deposit;
+                document.getElementById('balance').value = totalBalance.toFixed(2);
+                updateAccountDetails();
+            }
+        }
+
+        function withdrawAmount() {
+            const withdraw = parseFloat(document.getElementById('withdraw').value);
+            if (!isNaN(withdraw) && withdraw > 0 && withdraw <= totalBalance) {
+                totalBalance -= withdraw;
+                document.getElementById('balance').value = totalBalance.toFixed(2);
+                updateAccountDetails();
+            }
+        }
+
+        function updateAccountDetails() {
+            document.getElementById('displayAccountNumber').innerText = document.getElementById('accountNumber').value;
+            document.getElementById('displayAccountHolder').innerText = document.getElementById('accountHolder').value;
+            document.getElementById('displayBranch').innerText = document.getElementById('branch').value;
+            document.getElementById('displayCity').innerText = document.getElementById('city').value;
+            document.getElementById('displayBalance').innerText = totalBalance.toFixed(2);
+        }
+    </script>
+    
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Change Background Color</h3>
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-block" onclick="changeBackgroundColor('#ffffff')" style="background-color: #ffffff;">LIGHT MODE</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-block" onclick="changeBackgroundColor('#0a0908')" style="background-color: #0a0908;color: #ffffff;">DARK MODE</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function appendNumber(number) {
+            document.getElementById('result').value += number;
+        }
+
+        function appendOperator(operator) {
+            document.getElementById('result').value += operator;
+        }
+
+        function clearResult() {
+            document.getElementById('result').value = '';
+        }
+
+        function calculateResult() {
+            try {
+                document.getElementById('result').value = eval(document.getElementById('result').value);
+            } catch (e) {
+                document.getElementById('result').value = 'Error';
+            }
+        }
+    </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
