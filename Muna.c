@@ -25,12 +25,30 @@
 // }
 
 
+// #include<stdio.h>
+// int main(){
+//     int sum = 0;
+//     for(int i=5; i<=50; i++){
+//         sum += i;
+//     }
+//     printf("The sum of all numbers from 5 to 50 is: %d", sum);
+//     return 0;
+// }
+
+
 #include<stdio.h>
 int main(){
-    int sum = 0;
-    for(int i=5; i<=50; i++){
-        sum += i;
+    int num, sum=0, rem;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    while(num!=0){
+        rem = num%10;
+        sum = sum + rem;
+        num = num/10;
     }
-    printf("The sum of all numbers from 5 to 50 is: %d", sum);
+    printf("Sum of digits of the number is: %d", sum);
     return 0;
 }
+
+
+
