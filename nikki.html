@@ -1,15 +1,45 @@
 <html>
     <head>
-        <style>
-            div+h1{
-
-            }
-        </style>
+        <link rel="stylesheet" href="nikky.css">
     </head>
-    <body>
-        <div>
-            <p>Aditya prasad Swain</p>
-            <p>Aditya prasad swain</p>
+    <body style="background-color: #212121;">
+        <div class="perent">
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thursday</div>
         </div>
+        <script>
+            const adi=document.querySelector('.perent')
+            // console.log(adi.children)
+            // console.log(adi.children[0].innerHTML);
+
+            // for (let i = 0; i < adi.children.length; i++) {
+            //     const element = adi.children[i].style.backgroundColor='red';
+            //     console.log(element);
+                
+            // }
+            // console.log(adi.firstElementChild)
+            const muna = document.querySelector('.day')
+            // console.log(muna.innerHTML)
+            // console.log(muna.parentElement)
+            // console.log(muna.nextElementSibling);
+            // console.log(muna.childNodes)
+
+
+            const a = document.createElement('div')
+            a.innerText="aditya prasad swain"
+            a.className='adi'
+            a.id='palu'
+            a.style.backgroundColor='darkgreen'
+            a.style.color='red'
+            a.style.peadding='20px'
+            document.body.appendChild(a)
+            console.log(a);
+
+            
+
+            
+        </script>
     </body>
 </html>
