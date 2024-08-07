@@ -19,9 +19,13 @@
                 <li>sagar</li>
             </ul>
         </div>
-        <ul class="lang">
-            <li>javascript</li>
-        </ul>
+        <div class="lang">
+             <ul>
+                <li>javascript</li>
+                <li>pallabi</li>
+                <li>pallabi</li>
+             </ul>
+    </div>
        
 
         <script>
@@ -35,39 +39,50 @@
                 
             // }
             // console.log(adi.firstElementChild)
-            const muna = document.querySelector('.day')
+            // const muna = document.querySelector('.day')
             // console.log(muna.innerHTML)
             // console.log(muna.parentElement)
             // console.log(muna.nextElementSibling);
             // console.log(muna.childNodes)
 
 
-            const a = document.createElement('div')
-            a.innerText="aditya prasad swain"
-            a.className='adi'
-            a.id='palu'
-            a.style.backgroundColor='darkgreen'
-            a.style.color='red'
-            a.style.peadding='20px'
-            document.body.appendChild(a)
+            // const a = document.createElement('div')
+            // a.innerText="aditya prasad swain"
+            // a.className='adi'
+            // a.id='palu'
+            // a.style.backgroundColor='darkgreen'
+            // a.style.color='red'
+            // a.style.peadding='20px'
+            // document.body.appendChild(a)
             // console.log(a);
 
             
-            const d = document.querySelector('.muna1')
+            // const d = document.querySelector('.muna1')
             // console.log(d.children);
-            d.style.color='white'
+            // d.style.color='white'
             //console.log(d);
 
-            function addlanguagr(languagrname) {
-              const li = do
-            }
+            // function addlanguagr(languagename) {
+            //   const li = document.querySelector('.lang');
+            //   li.innerHTML = `${languagename}`
+            //   document.querySelector('.lang').appendChild(li)
+            // }
+            // addlanguagr("javascript")
+            // function addOptiLanguage(language) {
+            //     const li = document.createElement('li')
+            //     li.appendChild(document.createTextNode(language))
+            //     document.querySelector('.lang').appendChild(li)
+            // }
+            // addOptiLanguage('muna')
+            // addOptiLanguage('pallabi')
+            // addOptiLanguage('luckeycharm')
             
             
-            
+            const value = document.querySelector('li:nth:child(2)')
+            value.innerHTML='moon'
 
-            
-
-            
+            const remove = document.querySelector("li:last-child")
+            remove.remove()
         </script>
     </body>
 </html>
