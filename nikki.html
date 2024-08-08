@@ -1,88 +1,109 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="nikky.css">
-    </head>
-    <body style="background-color: #212121;">
-        <div class="perent">
-            <div class="day">Monday</div>
-            <div class="day">Tuesday</div>
-            <div class="day">Wednesday</div>
-            <div class="day">Thursday</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-group input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .form-group input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button-group button {
+        flex: 1;
+        margin: 0 10px;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .button-group button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
         </div>
-
-        <div class="muna">
-            <ul class="muna1">
-                <li>aditya</li>
-                <li>sunil</li>
-                <li>kishan</li>
-                <li>raj</li>
-                <li>sagar</li>
-            </ul>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
         </div>
-        <div class="lang">
-             <ul>
-                <li>javascript</li>
-                <li>pallabi</li>
-                <li>pallabi</li>
-             </ul>
-    </div>
-       
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="button-group">
+            <button type="submit">Sign Up</button>
+            <button type="button" onclick="login()">Login</button>
+        </div>
+    </form>
+</div>
 
-        <script>
-            const adi=document.querySelector('.perent')
-            // console.log(adi.children)
-            // console.log(adi.children[0].innerHTML);
-
-            // for (let i = 0; i < adi.children.length; i++) {
-            //     const element = adi.children[i].style.backgroundColor='red';
-            //     console.log(element);
-                
-            // }
-            // console.log(adi.firstElementChild)
-            // const muna = document.querySelector('.day')
-            // console.log(muna.innerHTML)
-            // console.log(muna.parentElement)
-            // console.log(muna.nextElementSibling);
-            // console.log(muna.childNodes)
-
-
-            // const a = document.createElement('div')
-            // a.innerText="aditya prasad swain"
-            // a.className='adi'
-            // a.id='palu'
-            // a.style.backgroundColor='darkgreen'
-            // a.style.color='red'
-            // a.style.peadding='20px'
-            // document.body.appendChild(a)
-            // console.log(a);
-
-            
-            // const d = document.querySelector('.muna1')
-            // console.log(d.children);
-            // d.style.color='white'
-            //console.log(d);
-
-            // function addlanguagr(languagename) {
-            //   const li = document.querySelector('.lang');
-            //   li.innerHTML = `${languagename}`
-            //   document.querySelector('.lang').appendChild(li)
-            // }
-            // addlanguagr("javascript")
-            // function addOptiLanguage(language) {
-            //     const li = document.createElement('li')
-            //     li.appendChild(document.createTextNode(language))
-            //     document.querySelector('.lang').appendChild(li)
-            // }
-            // addOptiLanguage('muna')
-            // addOptiLanguage('pallabi')
-            // addOptiLanguage('luckeycharm')
-            
-            
-            const value = document.querySelector('li:nth:child(2)')
-            value.innerHTML='moon'
-
-            const remove = document.querySelector("li:last-child")
-            remove.remove()
-        </script>
-    </body>
+<script>
+    function login() {
+        window.location.href = "login.html";
+    }
+</script>
+</body>
 </html>
