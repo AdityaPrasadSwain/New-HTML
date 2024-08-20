@@ -1,0 +1,57 @@
+<html>
+<head>
+    
+    <title>Document</title>
+    <style>
+    #green {
+        height: 10%;
+        width: 10%;
+        background-color: green;
+        float: left;
+    }
+    #red, #pink, #blue{
+        height: 10%;
+        width: 10%;
+        float: left;
+    }
+    #red {
+        background-color: red;
+    }
+    #pink {
+        background-color: pink;
+    }
+    #blue{
+        background-color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="box" id="green">
+
+    </div>
+    <div class="box" id="red">
+
+    </div>
+    <div class="box" id="pink">
+
+    </div>
+    <div class="box" id="blue">
+
+    </div>
+    <script>
+        const muna = document.querySelectorAll('#box')
+        const body = document.querySelector('body')
+        muna.forEach(function(button){
+            console.log(button);
+            button.addEventListener('click',function(e){
+                console.log(e);
+                console.log(e.target);
+                if (e.target.id === "pink") {
+                    body.style.backgroundColor = e.target.id;
+                }
+            })
+            
+        })
+    </script>
+</body>
+</html>
